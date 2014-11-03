@@ -1,7 +1,11 @@
 require './lib/dice'
 
 describe Dice do
+  before(:all) do
+    @die = Dice.new
+  end
+
   specify 'role' do
-    expect (Dice.new.role).to_eq('9')
+    expect @die_face.to_eq ( (/[9JQKA]/).match(Dice.new.die_face)[0] )
   end
 end
