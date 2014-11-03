@@ -5,7 +5,7 @@ describe Dice do
     Dice.new
   end
 
-  specify 'role' do
-    expect(subject.role).to eq( (/[9JQKA]/).match(Dice.new.die_face)[0] )
+  specify 'roll' do
+    expect(subject.roll).to match(/[9JQKA]/)
   end
 end
