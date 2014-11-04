@@ -1,4 +1,4 @@
-require './lib/dice'
+require 'dice'
 
 describe Dice do
   subject do
