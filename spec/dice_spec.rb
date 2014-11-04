@@ -1,8 +1,8 @@
 require 'dice'
 
-describe Dice do
+describe Pokerplay::Dice do
   subject do
-    Dice.new
+    Pokerplay::Dice.new
   end
 
   specify 'roll' do

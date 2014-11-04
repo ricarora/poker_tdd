@@ -1,22 +1,13 @@
-class Hand
-  attr_accessor :dice
+module  Pokerplay
+  class Hand
+    attr_accessor :dice
 
-  def initialize(dice)
-    @dice = dice
+    def initialize(dice=[])
+      @dice = dice
+    end
+
+    def hand_values
+      @dice.map {|e| e.roll}
+    end
   end
-
-
-
-
-
-
-
-  def kept
-    []
-  end
-
-  def roll_again
-
-  end
-
 end
